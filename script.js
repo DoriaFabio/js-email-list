@@ -17,7 +17,7 @@ function getData() {
         axios.get("https://flynn.boolean.careers/exercises/api/random/mail").then((res) => {
             // console.log(res.data.response);
             const email = res.data.response;
-            template += `<li class="list-group-item">${email}</li>`;
+            template += `<li class="list-group-item myli">${email}</li>`;
             arrayName.push(email);
             if (arrayName.length === 10) {
                 elUl.innerHTML = template;

@@ -25,3 +25,20 @@ body {
     border: 1px solid #C3FFFF;
     color: #010104;
 }
+
+.myul {
+    border-radius: 10px;
+}
+
+.myli {
+    background-color: #010104;
+    border: 0px;
+    color: #C3FFFF;
+}
+
+.myli:hover {
+    background-color: #C3FFFF;
+    border: 0px;
+    color: #010104; 
+    cursor: pointer;
+}
