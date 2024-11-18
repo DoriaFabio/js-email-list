@@ -9,6 +9,14 @@ body {
 .myh1 {
     color: cornsilk;
     background-color: rgba(0, 0, 0, 0.463);
+    position: relative;
+}
+
+.myh1 i {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-size: 40px;
 }
 
 .mybtn {
