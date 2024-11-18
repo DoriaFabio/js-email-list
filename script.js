@@ -8,7 +8,10 @@
 
 const elUl = document.querySelector("ul");
 const button = document.querySelector("button");
+const icon = document.querySelector("i");
 button.addEventListener("click", getData);
+
+
 
 function getData() {
     const arrayName = [];
@@ -31,4 +34,6 @@ function getData() {
                 console.log("in tutti i casi eseguita");
             });
     };
+    icon.classList.remove("fa-envelope");
+    icon.classList.add("fa-envelope-open");
 };
