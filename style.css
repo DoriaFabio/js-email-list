@@ -1,0 +1,27 @@
+body {
+    background-image: url("./img/sfondo-e-mail1.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh;
+}
+
+.myh1 {
+    color: cornsilk;
+    background-color: rgba(0, 0, 0, 0.463);
+}
+
+.mybtn {
+    border: 1px solid black;
+    background-color: #010104;
+    color: #C3FFFF;
+    padding: 5px 15px;
+    border-radius: 50px;
+    transition-duration: 0.7s;
+}
+
+.mybtn:hover {
+    background-color: #C3FFFF;
+    border: 1px solid #C3FFFF;
+    color: #010104;
+}
