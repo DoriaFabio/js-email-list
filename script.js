@@ -7,23 +7,28 @@
 // - Inserire un bottone che al click faccia il fetch altre 10 mail (sostituendo le altre)
 
 const elUl = document.querySelector("ul");
-const arrayName = [];
-let template = ``;
-for (let i = 0; i < 10; i++) {
-    axios.get("https://flynn.boolean.careers/exercises/api/random/mail").then((res) => {
-        // console.log(res.data.response);
-        const email = res.data.response;
-        template += `<li class="list-group-item">${email}</li>`;
-        arrayName.push(email);
-        if(arrayName.length === 10) {
-            elUl.innerHTML = template;
-        };
-    })
-        .catch((error) => {
-            console.log(error);
-        })
+const button = document.querySelector("button");
+button.addEventListener("click", getData);
 
-        .finally(() => {
-            console.log("in tutti i casi eseguita");
-        });
+function getData() {
+    const arrayName = [];
+    let template = ``;
+    for (let i = 0; i < 10; i++) {
+        axios.get("https://flynn.boolean.careers/exercises/api/random/mail").then((res) => {
+            // console.log(res.data.response);
+            const email = res.data.response;
+            template += `<li class="list-group-item">${email}</li>`;
+            arrayName.push(email);
+            if (arrayName.length === 10) {
+                elUl.innerHTML = template;
+            };
+        })
+            .catch((error) => {
+                console.log(error);
+            })
+
+            .finally(() => {
+                console.log("in tutti i casi eseguita");
+            });
+    };
 };

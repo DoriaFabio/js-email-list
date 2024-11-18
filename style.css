@@ -17,7 +17,7 @@ body {
     color: #C3FFFF;
     padding: 5px 15px;
     border-radius: 50px;
-    transition-duration: 0.7s;
+    transition-duration: 0.5s;
 }
 
 .mybtn:hover {
